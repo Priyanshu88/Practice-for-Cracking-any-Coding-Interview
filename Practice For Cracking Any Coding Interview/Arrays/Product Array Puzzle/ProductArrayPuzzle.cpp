@@ -21,7 +21,7 @@ vector<long long int> productExceptSelf(vector<long long int>& nums, int n)
         return vec;
     }
 
-    // intializing temp with 1 for left product array value
+    // initializing temp with 1 for left product array value to get stored
 
     long long temp = 1ll;
 
@@ -39,7 +39,7 @@ vector<long long int> productExceptSelf(vector<long long int>& nums, int n)
         temp = temp * nums[i];
     }
 
-    // Initialising temp with 1 
+    // initialising temp with 1 to store the product of values on right side of nums[i]
 
     temp = 1ll;
 
@@ -58,7 +58,7 @@ vector<long long int> productExceptSelf(vector<long long int>& nums, int n)
 
     }
 
-    // returing the vector
+    // returning the vector
 
     return vec;
 
